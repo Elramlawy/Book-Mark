@@ -1,0 +1,200 @@
+body
+{
+    background-color: #060222;
+}
+.content
+{
+    position: relative;
+    top: 100px;
+}
+
+.content h2 
+{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-size: 4rem;
+}
+
+.content h2:nth-child(1)
+{
+    color: transparent;
+    -webkit-text-stroke: 2px #ff4603;
+} 
+.content h2:nth-child(2)
+{
+    color:#ff4603;
+    animation: animate 3s ease-in-out infinite;
+}
+@keyframes animate{
+    0%,100%{
+        clip-path: polygon(0% 35%, 8% 41%, 12% 48%, 16% 54%, 29% 60%, 41% 56%, 53% 46%, 61% 40%, 74% 38%, 88% 43%, 100% 51%, 100% 78%, 100% 100%, 0% 99%);
+    }
+    50%{
+        clip-path: polygon(0 59%, 5% 52%, 15% 45%, 22% 41%, 35% 44%, 48% 50%, 58% 57%, 71% 58%, 81% 56%, 90% 49%, 100% 36%, 100% 78%, 100% 100%, 0% 99%);
+    }
+}
+h3
+{
+    border: 3px solid white;
+    cursor: pointer;
+    color: white;
+    text-shadow: 0 0 3px white;
+    padding-inline: 5px;
+}
+
+.form_regest
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: -300px;
+    opacity: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #060222;
+    border:3px solid #ff4603;
+    color: #ff4603;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scale: 1;
+
+    transition: opacity 1s, top 1s, scale 1s;
+}
+
+.action
+{
+    top: 50%;
+    opacity: 1;
+    scale: 1;
+}
+.fa-circle-xmark
+{
+    cursor: pointer;
+    transition: all .5s;
+}
+.fa-circle-xmark:hover
+{
+    color:#b83405; 
+}
+
+form input
+{
+  width: 100%;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #ff4603;
+  color: #ff4603;
+}
+form button
+{
+ background-color: #ff4603;
+ border: 3px solid #ff4603;
+ border-radius: 5px;
+ color: #060222;
+ transition: all .5s;
+}
+form button:hover
+{
+    background-color: transparent;
+    color: #ff4603;
+}
+form span
+{
+    font-size: 12px;
+}
+
+
+.data_content
+{
+    left: 0;
+    right: 0;
+    margin-top: 82px;
+}
+.data_content thead
+{
+    color: #ff4603;
+}
+.data_content tbody
+{
+    color: white;
+}
+.data_content tbody i
+{
+    cursor: pointer;
+}
+.data_content tbody i.visit
+{
+ color: green;
+}
+
+.data_content tbody i.delete
+{
+ color: red;
+}
+
+
+.anyMessage
+{
+    left: -100%;
+    transition: 7s ease-in-out;
+}
+.go
+{
+    left: 100%;
+    transition: 7s ease-in-out;
+}
+.anyMessage .message_content 
+{
+    background-color: #ff4603;
+    padding: 15px 10px;
+    font-size: 1em;
+}
+.transformMessage
+{
+    transform: rotateY(180deg);
+}
+.transformUl
+{
+    transform: rotateY(180deg);
+    
+}
+
+img
+{
+    width: 100%;
+    left: 50%;
+}
+
+.mainMessageError
+{
+    background-color: #06022269;
+    transform: scale(.5);
+    opacity: 0;
+    display: none;
+    transition: all 3s;
+}
+.mainMessageErrorOpen
+{
+    transform: scale(1);
+    opacity: 1;
+    display: block;
+    transition: all 3s;
+}
+.messageError
+{
+    background-color: #ff4603;
+}
+.messageError h4 
+{
+    color: #060222;
+}
+#closeMessageError
+{
+    color: #060222;
+}
+.fa-regular
+{
+    color: #060222;
+}

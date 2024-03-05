@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DevFolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/all.css">
+</head>
+<body>
+  
+   <div class="container d-flex justify-content-center text-center">
+    <div class="content ">
+      <h2>Bookmark</h2>
+      <h2>Bookmark</h2>
+    </div>
+    <h3 id="bookmark" class="bookmark position-absolute  py-2  fw-bolder top-50 text-center">Bookmark your favorite sites</h3>
+   </div>  
+   <div class="data_content container position-absolute top-50">
+    <table class="table text-center">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Site Name</th>
+          <th scope="col">Visite</th>
+          <th scope="col">Delete</th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+        
+      </tbody>
+    </table>
+   </div>
+
+   <section id="form_regest" class="form_regest rounded-3 overflow-hidden">
+    <i id="close" class="fa-solid fa-circle-xmark position-absolute fs-4 top-0 start-0 m-3"></i>
+    <div id="anyMessage" class="anyMessage position-absolute top-0 w-100">
+      <ul id="ulMessage"class="d-flex align-items-center list-unstyled">
+        <li id="message_content" class="badge message_content">product was created successfully</li>
+        <li class=""> <img src="./imgs/—Pngtree—creative orange airplane illustration_4715132.png" class="w-25" alt=""> </li>
+        
+      </ul>
+    </div>
+      <form id="form" class="w-50">
+        <div class="mb-5 mt-5">
+          <input type="text" class="" id="siteName" placeholder="Book mark name">
+          <span id="validNameMessage"></span>
+        </div>
+        <div class="">
+          <input type="text" class="" id="siteUrl" placeholder="Book mark url">
+          <span id="validUrlMessage" class=""></span>
+        </div>
+        <div class="text-center mt-3">
+          <button class="fs-5 px-3 mb-3 fw-bolder">submit</button>
+        </div>
+      </form>
+
+      <div id="mainMessageError" onclick="closeMessageerror()" class="mainMessageError top-0 bottom-0 start-0 end-0 position-absolute">
+        <div class="messageError position-absolute top-50 start-50 rounded-3 translate-middle w-75 p-3">
+          <i id="closeMessageError" onclick="closeMessageerror()" class="fa-solid fa-circle-xmark position-absolute fs-4 top-0 end-0 m-3"></i>
+          <h4 class="mt-4 fw-bolder">Site Name or Url is not valid, Please follow the rules below <i class="fa-solid fa-circle-down"></i></h4>
+          <ul class="fs-4 text-light list-unstyled">
+           <li>
+            <p><i class="fa-regular fa-circle-right me-2"></i>Site name must contain at least 3 characters</p>
+           </li>
+           <li>
+             <p><i class="fa-regular fa-circle-right me-2"></i>Site URL must be a valid one </p>
+           </li>
+          </ul>
+          
+          
+         </div>
+      </div>
+   </section>
+
+
+    <script src="./js/main.js"></script>
+ <script src="./js/bootstrap.min.js"></script>   
+</body>
+</html>
